@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Ingrid — Alverde Coaching</title>
+  <meta name="description" content="Meet Ingrid, certified ADHD and family coach, founder of Alverde Coaching. Thirty years of leadership experience, three children with ADHD, and a deep commitment to families who are ready for something different."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Alverde Coaching</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-text">
+    <span class="label">About Ingrid</span>
+    <h1>I've been on both sides of this table.</h1>
+    <p>As a parent, I know what it feels like to love a child with ADHD and not know how to help them. As a coach, I know what becomes possible when the right support arrives.</p>
+    <p>Alverde Coaching exists because I needed it once — and couldn't find it.</p>
+    <a href="contact.html" class="btn-primary" style="margin-top: 2rem;">Work With Me</a>
+  </div>
+  <div class="page-hero-image">
+    <div class="image-frame">
+      <img src="headshot.jpg" alt="Ingrid — Alverde Coaching"/>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT BODY -->
+<div class="about-body">
+  <h2>A different kind of foundation.</h2>
+  <p>I spent 30 years in local government as a Director overseeing Economic Development, Communications, and IT. I coached business startups, led project teams, and learned that the most important work in any organization is helping people understand themselves well enough to move forward.</p>
+  <p>I was also raising three children with ADHD.</p>
+
+  <blockquote>
+    <p>"You're not broken. Your brain just needs a different map."</p>
+  </blockquote>
+
+  <p>Those two things — professional coaching and parenting children with ADHD — taught me more about this work than any single credential could. I know what it looks like when a young person has been told they're "not trying hard enough" for the thousandth time. I know what it feels like for a parent who loves their child deeply and can't reach them.</p>
+
+  <p>That's where Alverde comes from. Not a clinical framework. Not a one-size approach. A coaching practice built on the belief that clarity, connection, and confidence are available to every family — when you have the right guide.</p>
+
+  <h2 style="margin-top: 3rem;">How I work.</h2>
+  <p>My coaching is strengths-first and practical. We don't dwell in the problem. We identify what's working, understand what's getting in the way, and build from there — with real tools, honest conversation, and a pace that respects your family's life.</p>
+  <p>Sessions are delivered online via video and supported by async communication between sessions — voice messages and email — so support doesn't disappear between calls.</p>
+  <p>Parents are not bystanders in this process. They're essential partners. Depending on the engagement, we work with the young person, the family together, or both.</p>
+
+  <h2 style="margin-top: 3rem;">Based in Petaluma. Working nationally.</h2>
+  <p>I'm rooted in Sonoma County, Northern California — but Alverde Coaching serves families across the country, entirely online. Wherever you are, if your family is ready for something different, I'd love to talk.</p>
+</div>
+
+<!-- CREDENTIALS -->
+<section class="credentials">
+  <div class="credentials-inner">
+    <span class="label">Training &amp; Credentials</span>
+    <h2>The preparation behind the practice.</h2>
+    <div class="credentials-grid">
+      <div class="credential-item">
+        <h4>ICF Certification</h4>
+        <p>International Coaching Federation certification in progress — the gold standard in professional coaching.</p>
+      </div>
+      <div class="credential-item">
+        <h4>ADDCA ADHD Coach Training</h4>
+        <p>Specialized ADHD coaching training through the ADD Coach Academy, one of the leading ADHD coach training programs.</p>
+      </div>
+      <div class="credential-item">
+        <h4>ADDCA Family Course</h4>
+        <p>Advanced specialized training in ADHD family coaching — working with parents, young people, and the family system together.</p>
+      </div>
+      <div class="credential-item">
+        <h4>P.E.T. Certified Instructor</h4>
+        <p>Certified instructor in Parent Effectiveness Training — a research-backed framework for family communication and connection.</p>
+      </div>
+      <div class="credential-item">
+        <h4>30 Years Leadership Experience</h4>
+        <p>Three decades as a Director in local government, coaching teams, leading change, and developing people at every stage.</p>
+      </div>
+      <div class="credential-item">
+        <h4>Lived Experience</h4>
+        <p>Parent of three children with ADHD. This is the credential that informs everything else — and the reason Alverde exists.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="footer-cta">
+  <h2>Ready to find your direction?</h2>
+  <p>Start with a conversation. No commitment required.</p>
+  <a href="contact.html" class="btn-primary">Get in Touch</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">Alverde Coaching</p>
+    <p class="footer-tagline">Find your direction. Chart your own course.</p>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2025 Alverde Coaching &nbsp;·&nbsp; Petaluma, California &nbsp;·&nbsp; <a href="mailto:ingrid@alverdecoaching.com">ingrid@alverdecoaching.com</a></p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

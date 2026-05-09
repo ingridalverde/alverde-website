@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Alverde Coaching</title>
+  <meta name="description" content="Reach out to Alverde Coaching. Start with a conversation — no commitment required."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Alverde Coaching</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-wrap">
+  <div class="contact-info">
+    <span class="label">Get in Touch</span>
+    <h1>Let's start a conversation.</h1>
+    <p>Whether you're ready to book a Jumpstart session or just want to ask a few questions first, I'd love to hear from you. No pressure, no sales pitch — just a real conversation about whether this is the right fit for your family.</p>
+    <p>I typically respond within one business day.</p>
+
+    <div class="contact-details">
+      <div class="contact-detail">
+        <h4>Email</h4>
+        <p><a href="mailto:ingrid@alverdecoaching.com">ingrid@alverdecoaching.com</a></p>
+      </div>
+      <div class="contact-detail">
+        <h4>Phone</h4>
+        <p><a href="tel:7075040287">707-504-0287</a></p>
+      </div>
+      <div class="contact-detail">
+        <h4>Location</h4>
+        <p>Petaluma, California<br/>Serving families nationally — all sessions online.</p>
+      </div>
+      <div class="contact-detail">
+        <h4>Not sure where to start?</h4>
+        <p>A <a href="services.html" style="color: var(--sage); border-bottom: 1px solid var(--pale-sage);">Jumpstart session</a> is designed exactly for that — one focused conversation to find your direction.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form-wrap">
+    <h2>Send a message.</h2>
+    <div id="contactForm">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="First and last name"/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="your@email.com"/>
+      </div>
+      <div class="form-group">
+        <label for="role">I am a</label>
+        <select id="role">
+          <option value="" disabled selected>Select one</option>
+          <option value="parent">Parent reaching out about my child</option>
+          <option value="young-person">Young person reaching out for myself</option>
+          <option value="both">Parent and young person together</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="service">I'm interested in</label>
+        <select id="service">
+          <option value="" disabled selected>Select one</option>
+          <option value="jumpstart">Jumpstart Session ($175)</option>
+          <option value="spark">Spark Package ($550)</option>
+          <option value="roots">Roots Package ($1,100)</option>
+          <option value="flourish">Flourish Package ($1,950)</option>
+          <option value="unsure">I'm not sure yet — just exploring</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell me a little about your situation</label>
+        <textarea id="message" placeholder="What's going on for your family right now? What are you hoping coaching might help with? There's no wrong answer here."></textarea>
+      </div>
+      <button class="btn-primary" onclick="submitForm()" style="width: 100%; padding: 1rem;">Send Message</button>
+    </div>
+    <div class="form-success" id="formSuccess">
+      <h3>Message received.</h3>
+      <p>Thank you for reaching out. I'll be in touch within one business day.</p>
+      <p style="margin-top: 1rem; font-family: var(--font-display); font-style: italic; font-size: 1.1rem; color: var(--sage);">Find your direction. Chart your own course.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">Alverde Coaching</p>
+    <p class="footer-tagline">Find your direction. Chart your own course.</p>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2025 Alverde Coaching &nbsp;·&nbsp; Petaluma, California &nbsp;·&nbsp; <a href="mailto:ingrid@alverdecoaching.com">ingrid@alverdecoaching.com</a></p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function submitForm() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    if (!name || !email || !message) {
+      alert('Please fill in your name, email, and message before sending.');
+      return;
+    }
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+</script>
+</body>
+</html>
